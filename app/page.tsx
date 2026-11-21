@@ -30,18 +30,41 @@ export default function NorthstarStudioPage() {
         </div>
       </header>
 
-      <section className="hero relative isolate min-h-[690px] overflow-hidden bg-[#25332b] text-white lg:min-h-[790px]">
-        <Image src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=2600&q=92&fit=crop" alt="Creative brand identity layouts and colourful design materials" fill priority unoptimized sizes="100vw" className="hero-image object-cover"/>
-        <div className="hero-overlay absolute inset-0"/>
-        <div className="relative mx-auto flex min-h-[690px] max-w-[1440px] flex-col justify-between px-5 pb-10 pt-20 sm:px-8 lg:min-h-[790px] lg:px-14 lg:pb-14 lg:pt-28">
-          <div className="flex items-center gap-3 text-[8px] tracking-[.2em] text-white/75"><span className="h-2 w-2 rounded-full bg-[#d7fa70]"/> BRANDING / WEB DESIGN / CREATIVE CAMPAIGNS</div>
-          <div className="grid gap-10 lg:grid-cols-[1.2fr_.55fr] lg:items-end">
-            <div><p className="mb-7 text-[9px] tracking-[.2em] text-[#d7fa70]">MAKE YOUR BUSINESS IMPOSSIBLE TO MISS</p><h1 className="max-w-[980px] text-[clamp(4.3rem,11vw,10.5rem)] font-semibold leading-[.78] tracking-[-.095em]">Build a brand.<br/>Grow your <span className="font-serif font-normal italic text-[#d7fa70]">business.</span></h1></div>
-            <div className="max-w-sm pb-2 lg:justify-self-end"><p className="text-[14px] leading-7 text-white/80">We create brand identities, high-performing websites and campaign visuals for businesses ready to look sharper, communicate clearly and grow.</p><a href="#services" className="mt-8 inline-flex items-center gap-7 border-b border-white/70 pb-3 text-[9px] tracking-[.15em] hover:gap-10">EXPLORE OUR SERVICES <ArrowDown size={14}/></a></div>
+      <section className="hero relative isolate overflow-hidden bg-[#e8e7dc] text-[#20251f]">
+        <div className="mx-auto grid min-h-[720px] max-w-[1440px] items-center gap-8 px-5 py-12 sm:px-8 lg:min-h-[790px] lg:grid-cols-[.88fr_1.12fr] lg:gap-4 lg:px-14 lg:py-16">
+          <div className="relative z-10 flex h-full flex-col justify-between py-3 lg:py-8">
+            <div className="flex items-center gap-3 text-[8px] tracking-[.2em] text-[#626b5a]"><span className="h-2 w-2 rounded-full bg-[#91a84b]"/> INDEPENDENT CREATIVE STUDIO · BRAND / DIGITAL / CAMPAIGN</div>
+            <div className="py-12 lg:py-0">
+              <p className="mb-7 text-[9px] font-semibold tracking-[.2em] text-[#82934a]">GOOD BUSINESSES DESERVE GREAT PRESENTATION</p>
+              <h1 className="max-w-[760px] text-[clamp(4.2rem,9.2vw,8.7rem)] font-semibold leading-[.79] tracking-[-.095em]">Make them<br/><span className="font-serif font-normal italic text-[#82934a]">stop</span> and<br/>look<span className="text-[#82934a]">.</span></h1>
+              <p className="mt-8 max-w-[390px] text-[13px] leading-7 text-[#626b5a]">We turn hospitality, food and lifestyle businesses into brands people notice — with distinctive identity, thoughtful websites and campaign visuals.</p>
+              <div className="mt-9 flex flex-wrap items-center gap-5">
+                <a href="#services" className="inline-flex items-center gap-5 bg-[#20251f] px-6 py-4 text-[9px] font-semibold tracking-[.14em] text-white transition hover:bg-[#82934a]">EXPLORE WHAT WE DO <ArrowUpRight size={15}/></a>
+                <a href="#sectors" className="border-b border-[#20251f]/40 pb-2 text-[9px] tracking-[.14em] transition hover:border-[#82934a]">OUR INDUSTRIES</a>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 border-t border-[#20251f]/20 pt-5 text-[8px] tracking-[.16em] text-[#74796c]"><span>STRATEGY WITH STYLE</span><span className="h-px w-8 bg-[#aab09e]"/><span>DESIGN WITH PURPOSE</span></div>
           </div>
-          <div className="flex flex-wrap items-end justify-between gap-5 border-t border-white/35 pt-5 text-[8px] tracking-[.16em] text-white/75"><span>INDEPENDENT CREATIVE STUDIO</span><span>STRATEGY WITH STYLE. DESIGN WITH PURPOSE.</span><span>AVAILABLE FOR SELECT PROJECTS ↗</span></div>
+
+          <div className="hero-collage relative mx-auto h-[490px] w-full max-w-[650px] sm:h-[590px] lg:h-[660px]">
+            <div className="hero-photo hero-photo-main absolute bottom-[3%] left-[7%] h-[83%] w-[58%] overflow-hidden bg-[#c8c9b8]">
+              <Image src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1400&q=90&fit=crop" alt="Sunlit resort pool framed by tropical greenery" fill priority unoptimized sizes="(max-width: 1024px) 60vw, 38vw" className="object-cover"/>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"/>
+              <span className="absolute bottom-5 left-5 text-[8px] tracking-[.2em] text-white">01 — HOSPITALITY</span>
+            </div>
+            <div className="hero-photo hero-photo-top absolute right-[2%] top-[3%] h-[43%] w-[38%] overflow-hidden bg-[#d7c7ad]">
+              <Image src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1000&q=88&fit=crop" alt="Editorial coffee and cafe brand atmosphere" fill unoptimized sizes="(max-width: 1024px) 38vw, 25vw" className="object-cover"/>
+              <span className="absolute bottom-4 left-4 text-[8px] tracking-[.18em] text-white drop-shadow">02 — FOOD & DRINK</span>
+            </div>
+            <div className="hero-photo hero-photo-bottom absolute bottom-[3%] right-[2%] h-[38%] w-[38%] overflow-hidden bg-[#c9b8a6]">
+              <Image src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000&q=88&fit=crop" alt="Fashion and lifestyle editorial photography" fill unoptimized sizes="(max-width: 1024px) 38vw, 25vw" className="object-cover"/>
+              <span className="absolute bottom-4 left-4 text-[8px] tracking-[.18em] text-white drop-shadow">03 — LIFESTYLE</span>
+            </div>
+            <div className="hero-orbit absolute right-[1%] top-[47%] z-10 flex h-24 w-24 -translate-y-1/2 items-center justify-center rounded-full bg-[#d7fa70] text-center text-[8px] font-semibold leading-4 tracking-[.13em] shadow-xl sm:h-28 sm:w-28">IDEAS<br/>INTO<br/>IMPACT <span className="ml-1 text-base">✳</span></div>
+            <div className="absolute left-0 top-[8%] z-10 -rotate-6 border border-[#20251f]/25 bg-[#f4f1e9] px-4 py-3 text-[8px] leading-4 tracking-[.14em] shadow-lg">MAKE IT<br/>MEMORABLE.</div>
+            <div className="absolute bottom-[-1%] left-[4%] text-[8px] tracking-[.18em] text-[#74796c]">A MORE DISTINCTIVE WAY TO SHOW UP ↗</div>
+          </div>
         </div>
-        <div className="hero-stamp absolute right-8 top-28 hidden h-28 w-28 rotate-12 items-center justify-center rounded-full border border-white/60 text-center text-[8px] leading-4 tracking-[.17em] text-white lg:flex">THINK<br/>MAKE<br/>GROW<br/>✳</div>
       </section>
 
       <section className="mx-auto grid max-w-[1440px] gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[.8fr_1.2fr] lg:px-14 lg:py-28">
